@@ -1,0 +1,78 @@
+[
+    {
+        "id" : 1, 
+        "title" : "Mặt nạ gương" ,
+        "category" : "Hành động",
+        "img": "./imgs/matnaguong.jpg" ,  
+        "year" : 2022,
+
+        "comment" : [
+            {"id" : 1, "userId" : 1, "content" : "Phim quá hay", "rate" : 7.65  },
+            {"id" : 2, "userId" : 2, "content" : "Quá xuất sắc", "rate" : 9.65  },
+            {"id" : 3, "userId" : 3, "content" : "Quá đỉnh", "rate" : 8.72  }
+        ], 
+
+        "describe" : "Mặt nạ gương xoay quanh Hoa (Lương Thu Trang), một nữ nhà văn theo đuổi dòng truyện trinh thám đã gây dựng được một thương hiệu ăn khách mang tên “Sát Nhân K”. Mọi chuyện bắt đầu khi Hoa tìm kiếm chất liệu cho phần tiếp theo của bộ truyện là một vụ án mạng xảy ra trong thẩm mỹ viện. Quá trình tìm kiếm tư liệu cho sản phẩm tưởng tượng của mình đã vô tình khiến Hoa mắc vào một vụ án đặc biệt. Trớ trêu thay, vụ án đặc biệt đó lại là của gia đình cô. Bí ẩn về cái chết của mẹ ruột cùng bà Diễm (Ngọc Lan) – mẹ kế của Hoa cũng lần lượt bị phơi bày..." 
+    },
+
+    {
+        "id" : 2, 
+        "title" : "Vua hải tặc" ,
+        "category" : "Hoạt hình",
+        "img": "./imgs/daohaitac.jpg" ,
+         "year" : 2021, 
+         
+        "comment" : [
+            {"id" : 1, "userId" : 1, "content" : "Phim quá hay", "rate" : 7.65  },
+            {"id" : 2, "userId" : 2, "content" : "Hoạt hình đỉnh quá", "rate" : 9.65  },
+            {"id" : 3, "userId" : 3, "content" : "Bao giờ có tập mới", "rate" : 8.72  }
+        ],
+
+         "describe" : "Câu chuyện kể về Monkey D. Luffy, một chàng trai trẻ tuổi, được thần tượng thời thơ ấu của mình là Shanks Tóc Đỏ truyền cảm hứng trở thành một hải tặc, bắt đầu cuộc hành trình tại East Blue tìm kiếm kho báu danh giá và trở thành Tân Vua Hải Tặc. Trong quá trình thành lập băng hải tặc Mũ Rơm, Luffy đã giải cứu và kết bạn với một kiếm sĩ tên là Roronoa Zoro(ロのノア ゾロ), và họ bắt đầu tìm kiếm One Piece. Họ tham gia vào cuộc hành trình cùng Nami(ナミ), một hoa tiêu; Usopp(ウソプ), một tay thiện xạ; Vinsmoke Sanji(ヴィンスモク サンジ), một đầu bếp. Họ có được một con tàu tên là Going Merry(ゴイング メリー) và đối đầu với những băng hải tặc khét tiếng của East Blue. Khi Luffy và đồng đội của cậu bắt đầu cuộc phiêu lưu của, những người khác tham gia vào băng sau đó trong bộ truyện, bao gồm Tony Tony Chopper(トニー チョパー), một bác sĩ và là một con tuần lộc biết nói; Nico Robin(ニコ ロビン), một nhà khảo cổ học; Franky(フランキー), một thợ đóng tàu cyborg; Brook(ブルーク), một nhạc công và Jinbei(ジンベイ), một người cá và là cựu thành viên của Thất vũ hải(七武海). Khi Going Merry bị hư hỏng không thể sửa chữa được, băng hải tặc Mũ Rơm đã sử dụng một con tàu mới tên là Thousand Sunny(サウサンド サーニー). Cùng nhau, họ chạm trán với những tên hải tặc, thợ săn tiền thưởng, tổ chức tội phạm, quân cách mạng, đặc vụ và Chính phủ thế giới, cùng nhiều bạn bè và kẻ thù khác..." 
+        },
+
+    {
+        "id" : 3, 
+        "title" : "Về nhà đi con" ,
+        "category" : "Tình cảm",
+        "img": "./imgsvenhadicon" , 
+        "year" : 2021, 
+        "comment" : [
+            {"id" : 1, "userId" : 1, "content" : "Phim rất xuất sắc", "rate" : 7.65  },
+            {"id" : 2, "userId" : 2, "content" : "Hay", "rate" : 9.65  },
+            {"id" : 3, "userId" : 3, "content" : "Chất lượng phim mờ quá", "rate" : 8.72  }
+        ],
+        
+        "describe" : "Lấy cảm hứng từ tác phẩm Khi người đàn ông góa vợ bật khóc, Về nhà đi con xoay quanh câu chuyện về ba chị em gái Thu Huệ (Thu Quỳnh), Anh Thư (Bảo Thanh) và Ánh Dương (Bảo Hân). Cả ba người đều mồ côi mẹ từ thuở nhỏ; mỗi người trong số họ đều có một tính cách, một lối sống riêng: chị cả Thu Huệ đảm đang, dịu dàng, điềm đạm; cô hai Anh Thư xinh đẹp, sắc sảo, thực dụng; cô út Ánh Dương bộc trực, hoang dã, tính tình như một cậu con trai. Tuy cả ba chị em đều gặp phải những biến cố trong cuộc sống, nhưng họ may mắn có chung một điểm tựa là ông Sơn (NSND Trung Anh) - một người bố tận tuỵ, hết mực yêu thương các con. Sau nhiều biến cố, cuối cùng, ba cô con gái đều nhận ra hạnh phúc lớn nhất mà họ có được chính là một người bố luôn sẵn sàng bao bọc và nói về nhà đi con bất cứ khi nào họ cần một mái ấm..." 
+    },
+    {
+        "id" : 4, 
+        "title" : "Ngõ nhỏ vào đời" ,
+        "category" : "Tình cảm",
+        "img": "./imgsngonhovaodoi.jpg" ,
+        "year" : 2022, 
+        
+        "comment" : [
+            {"id" : 1, "userId" : 1, "content" : "Phim rất xuất sắc", "rate" : 7.65  },
+            {"id" : 2, "userId" : 2, "content" : "Hay", "rate" : 9.65  },
+            {"id" : 3, "userId" : 3, "content" : "Chất lượng phim mờ quá", "rate" : 8.72  }
+        ],
+        
+        "describe" : "Lối nhỏ vào đời xoay quanh Dũng (Tạ Hoàng Long) – một học sinh cấp 3 và người bạn thân ngoài 60 tuổi của cậu là Ông Thành (NSND Bùi Bài Bình). Trong khi Dũng thiếu thốn sự quan tâm từ bố vì quanh năm bận việc thì Ông Thành đi làm nghề xe ôm để vơi bớt sự lạnh nhạt từ vợ chồng con trai. Là hai con người xa lạ ở hai thế hệ khác nhau, nhưng từ mối quan hệ khách hàng và ông xe ôm, họ lại dần trở thành hai người bạn đồng cảm, thấu hiểu và luôn ở bên cạnh nhau..." 
+    },
+    {
+        "id" : 5, 
+        "title" : "Ám ảnh kinh hoàng" ,
+        "category" : "Kinh dị",
+        "img": "./imgs/amanhkinhhoang.jpg" , 
+        "year" : 2021, 
+        
+        "comment" : [
+            {"id" : 1, "userId" : 1, "content" : "Sợ quá", "rate" : 7.65  },
+            {"id" : 2, "userId" : 2, "content" : "Hay", "rate" : 9.65  },
+            {"id" : 3, "userId" : 3, "content" : "Nội dung quá đỉnh", "rate" : 8.72  }
+        ],
+        
+        "describe" : "Phim mở đầu vào năm 1968, hai cô gái và một chàng trai trẻ thuật lại câu chuyện của họ cho Ed và Lorraine Warren nghe về con búp bê bị ám bởi một cô gái 7 tuổi tên là Annabelle Higgins mà họ tin rằng đã bị ma ám. Sự việc sau đó cho thấy có vẻ Ed và Lorraine đã xử lý xong vụ Annabelle và niêm phong con búp bê này trong căn phòng chứa những đồ vật ma ám mà họ đã xử lý trước đây.Năm 1971, Roger và Carolyn Perron chuyển đến sống trong một trang trại ở Harrisville, Rhode Island với năm cô con gái của họ là Andrea, Nancy, Christine, Cindy và April. Trong ngày đầu tiên mọi chuyện diễn ra suôn sẻ mặc dù chú chó Sadie của họ không chịu vào nhà. Cô bé út April nhặt được một chiếc hộp âm nhạc cũ. Tối hôm đó, trong khi chơi trò Trốn và Vỗ tay, các cô gái đã phát hiện ra một tầng hầm bí mật trong ngôi nhà." 
+    }
+]

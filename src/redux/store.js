@@ -3,17 +3,14 @@ import storage from 'redux-persist/lib/storage'
 import {
     persistReducer
 } from "redux-persist";
-
-// const movie = {
-//     name: '...',
-//     title: '...',
-//     description: '',
-//     evaluates: []
-// }
+import data from '../data.json';
 
 const initState = {
     user: null,
-    movies: []
+    titles: [...data.titles],
+    users: [...data.users],
+    notification: null,
+    searchValue: ''
 }
 
 const slice = createSlice({
@@ -22,23 +19,56 @@ const slice = createSlice({
     reducers: {
         setLogin: (state, action) => {
             state.user = action.payload.user
-            state.token = action.payload.token
         },
         setLogout: (state) => {
             state.user = null
-            state.token = null
+        },
+        addUserRegister: (state, action) => {
+            state.users = [
+                ...state.users,
+                action.payload.user
+            ]
+        },
+        setNotification: (state, action) => {
+            state.notification = action.payload.value
+        },
+        addRates: (state, action) => {
+            state.titles
+            .find(title => title.id === action.payload.titleId)
+            .movies.find(movie => movie.id === action.payload.movieId)
+            .rates.push(action.payload.rate)
+        },
+        saveRate: (state, action) => {
+
+            const rate = state.titles
+            .find(title => title.id === action.payload.titleId)
+            .movies.find(movie => movie.id === action.payload.movieId)
+            .rates
+            .find(rate => rate.id === action.payload.rate.id);
+
+            rate.comment = action.payload.rate.comment;
+            rate.score = action.payload.rate.score;
+
+        },
+        setSearch: (state, action) => {
+            state.searchValue = action.payload.value
         }
     }
 });
 
 export const {
     setLogin,
-    setLogout
+    setLogout,
+    addUserRegister,
+    setNotification,
+    addRates,
+    saveRate,
+    setSearch
 } = slice.actions;
 
 const sliceReducer = slice.reducer;
 
-const persistConfig = { key: 'movieApp', storage, version: 1, whitelist: ['user', 'movies'] };
+const persistConfig = { key: 'movieApp', storage, version: 1, whitelist: ['user', 'titles', 'users'] };
 const persistedReducer = persistReducer(persistConfig, sliceReducer);
 
 const store = configureStore({

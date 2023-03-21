@@ -1,0 +1,21 @@
+.container {
+    height: 60px;
+    padding: 0.5rem 2rem;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px 1px #ccc;
+    position: sticky;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+.header_columnn {
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    margin: 0 1rem;
+}

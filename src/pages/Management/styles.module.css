@@ -1,0 +1,9 @@
+.container {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    max-height: calc(100vh - 60px);
+}
+
+.container_left {
+    padding: 1rem 0.5rem;
+}

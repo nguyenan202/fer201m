@@ -24,6 +24,13 @@ const Header = () => {
                 <Link to='/' className={styles.link}>
                     Trang chủ
                 </Link>
+                {user && user.role === 1 &&
+                    <Link
+                        to='/manage'
+                        className={styles.link}
+                    >
+                        Quản lý
+                    </Link>}
             </Row>
             <Row className={styles.header_columnn}>
                 <Input.Search

@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import { setNotification } from './redux/store';
 import Home from './pages/Home';
 import Movie from './pages/Movie';
+import Managment from './pages/Management';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path='/register' element={user ? <Navigate to='/' /> : <Register />} />
         <Route path='/' element={<Home/>} />
         <Route path='/movie/:id' element={<Movie/>} />
+        <Route path='/manage' element={user ? (user.role === 1 ? <Managment/> : <Row>Access Denied</Row>) : <Login/>} />
       </Routes>
       {context}
     </div>

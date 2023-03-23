@@ -20,13 +20,15 @@ const Movies = ({ span, titleId }) => {
         }))
     }));
 
-    const [saveData, setSaveData] = useState([]);
-    const [movies, setMovies] = useState([]);
+    const getData = () => titleId !== '0' ?
+        titles.find(title => title.id + '' === titleId).movies :
+        titles.map(title => title.movies).flat()
+
+    const [saveData, setSaveData] = useState(getData());
+    const [movies, setMovies] = useState(getData());
 
     useEffect(() => {
-        const moviesData = titleId !== '0' ?
-            titles.find(title => title.id + '' === titleId).movies :
-            titles.map(title => title.movies).flat();
+        const moviesData = getData();
 
         setMovies([...moviesData]);
         setSaveData([...moviesData]);

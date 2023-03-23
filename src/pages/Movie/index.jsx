@@ -1,4 +1,4 @@
-import { Button, Col, Divider, Image, Row, Typography } from "antd"
+import { Button, Col, Divider, Image, Rate, Row, Typography } from "antd"
 import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -102,6 +102,13 @@ const Movie = () => {
                         </Typography.Title>
                         {movie.rates.map(rate => (
                             <Row key={rate.id} style={{ margin: '0.75rem 0' }}>
+                                <Row style={{width: '100%'}}>
+                                    <Rate
+                                        count={10}
+                                        defaultValue={rate.score}
+                                        disabled
+                                    />
+                                </Row>
                                 <strong>{`${rate.user.name}:`} </strong>
                                 <Typography.Text style={{ marginLeft: '0.5rem' }}>
                                     {rate.comment}

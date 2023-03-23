@@ -62,7 +62,8 @@ const Register = () => {
                                 email: values.email.trim(),
                                 password: values.password.trim(),
                                 name: values.name.trim(),
-                                role: 2
+                                role: 2,
+                                status: 1
                             }
 
                             dispatch(addUserRegister({ user }));

@@ -29,22 +29,29 @@ const slice = createSlice({
                 action.payload.user
             ]
         },
+        updateStatusUser: (state, action) => {
+            const user = state.users.find(user => user.id === action.payload.userId)
+
+            if (user) {
+                user.status = action.payload.status
+            }
+        },
         setNotification: (state, action) => {
             state.notification = action.payload.value
         },
         addRates: (state, action) => {
             state.titles
-            .find(title => title.id === action.payload.titleId)
-            .movies.find(movie => movie.id === action.payload.movieId)
-            .rates.push(action.payload.rate)
+                .find(title => title.id === action.payload.titleId)
+                .movies.find(movie => movie.id === action.payload.movieId)
+                .rates.push(action.payload.rate)
         },
         saveRate: (state, action) => {
 
             const rate = state.titles
-            .find(title => title.id === action.payload.titleId)
-            .movies.find(movie => movie.id === action.payload.movieId)
-            .rates
-            .find(rate => rate.id === action.payload.rate.id);
+                .find(title => title.id === action.payload.titleId)
+                .movies.find(movie => movie.id === action.payload.movieId)
+                .rates
+                .find(rate => rate.id === action.payload.rate.id);
 
             rate.comment = action.payload.rate.comment;
             rate.score = action.payload.rate.score;
@@ -52,6 +59,44 @@ const slice = createSlice({
         },
         setSearch: (state, action) => {
             state.searchValue = action.payload.value
+        },
+        addMovie: (state, action) => {
+            state.titles
+                .find(title => title.id === action.payload.titleId)
+                .movies.push(action.payload.movie)
+        },
+        deleteMovie: (state, action) => {
+            state.titles
+                .find(title => title.id === action.payload.titleId)
+                .movies = [
+                    ...state.titles
+                        .find(title => title.id === action.payload.titleId)
+                        .movies
+                        .filter(movie => movie.id !== action.payload.movieId)
+                ]
+        },
+        updateMovie: (state, action) => {
+            const movie = state.titles
+                .find(title => title.id === action.payload.titleId)
+                .movies
+                .find(movie => movie.id === action.payload.movieId);
+
+            movie.name = action.payload.movie.name;
+            movie.description = action.payload.movie.description;
+            movie.picturePath = action.payload.movie.picturePath;
+        },
+        addTitle: (state, action) => {
+            state.titles.push(action.payload.title)
+        },
+        updateTitle: (state, action) => {
+            state.titles
+                .find(title => title.id === action.payload.titleId)
+                .name = action.payload.value
+        },
+        deleteTitle: (state, action) => {
+            state.titles = [
+                ...state.titles.filter(title => title.id !== action.payload.titleId)
+            ]
         }
     }
 });
@@ -63,7 +108,14 @@ export const {
     setNotification,
     addRates,
     saveRate,
-    setSearch
+    setSearch,
+    addMovie,
+    addTitle,
+    deleteMovie,
+    deleteTitle,
+    updateTitle,
+    updateMovie,
+    updateStatusUser
 } = slice.actions;
 
 const sliceReducer = slice.reducer;

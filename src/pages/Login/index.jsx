@@ -23,9 +23,9 @@ const loginSchema = yup.object().shape({
 const Login = () => {
 
     const users = useSelector(state => state.users);
+    const openNotification = useSelector(state => state.notification);
     const dispatch = useDispatch();
 
-    console.log(users);
 
     return (
         <Row
@@ -60,6 +60,9 @@ const Login = () => {
                         }
 
                         if (!isError && user) {
+
+                            if (user.status !== 1) return openNotification('error', 'Tài khoản của bạn bị khóa');
+                            
                             const userLogin = {
                                 id: user.id,
                                 email: user.email,

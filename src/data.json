@@ -5,6 +5,7 @@
             "email": "annthe161368@fpt.edu.vn",
             "password": "thanhAN9999",
             "name": "Nguyễn Thành An",
+            "status": 1,
             "role": 1
         },
         {
@@ -12,6 +13,7 @@
             "email": "ffgghhaa0000@gmail.com",
             "password": "123456789",
             "name": "Trần Ngọc",
+            "status": 1,
             "role": 2
         },
         {
@@ -19,6 +21,7 @@
             "email": "annt8302@gmail.com",
             "password": "123456789",
             "name": "Nguyễn Minh Bảo",
+            "status": 1,
             "role": 2
         }
     ],
